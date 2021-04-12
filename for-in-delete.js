@@ -112,16 +112,18 @@ let double = function(obj) {
 
 //Code Here
 
-// function secrets(obj) {
-//   let myStr = "";
-//   let myArr = [];
-//   for (let key in obj) {
-//     if (key.startsWith('sh')) {
-//       myArr.push(key);
-//     }
-//   }
-//   return myArr.join('');
-// }
+let secrets = function(obj) {
+  let myStr = '';
+  for (let key in obj) {
+    if (key.startsWith('sh')) {
+      myStr += obj[key];
+    }
+  }
+  return myStr;
+}
+
+
+
 
 
 
